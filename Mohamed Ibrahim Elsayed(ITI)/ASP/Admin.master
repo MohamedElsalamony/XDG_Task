@@ -1,0 +1,95 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
+<head profile="http://gmpg.org/xfn/11">
+<title>Educational | Style Demo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.slidepanel.setup.js"></script>
+    <style type="text/css">
+        .auto-style1 {
+            color: #660033;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+<!--Login -->
+    <div class="wrapper col0">
+  <div id="topbar">
+    <div id="slidepanel">
+   
+    <!----------------------------------------------------------------------------------> 
+     <%-- <div class="topbox">
+       <a href ="Instructor_login.aspx"> <h2>Customer Login Here</h2></a>
+ --%>
+    <!---------------------------------------------------------------------------------->        
+      </div>
+      <div class="topbox last">
+       <a href="Student_login.aspx"> <h2>Employee Login Here</h2></a>
+    <!---------------------------------------------------------------------------------->     
+      </div>
+         <div class="topbox last">
+       <a href="Admine Login.aspx"> <h2>Admin Login Here</h2></a>
+  
+    <!---------------------------------------------------------------------------------->      
+      </div>
+      <br class="clear" />
+    </div>
+    <div id="loginpanel">
+      <ul>
+        <li class="left">LogIn Here &raquo;</li>
+        <li class="right" id="toggle"><a id="slideit" href="#slidepanel">Administration</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!--End Login -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1>SMO</h1>
+      <p>
+          
+          Shabab Masr Online Shopping
+      </p>
+    </div>
+          <br class="clear" />
+  </div>
+</div>
+    <div class="wrapper col2">
+  <div id="topnav">
+    <ul>
+      <li><a href="Home.aspx" >Home</a>
+        
+      </li>
+      <li ><a href="About us.aspx">About SMO </a>&nbsp;</li></li>
+
+      <li class="last"><a href="contact us.aspx">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+    <!--------------------------------------->
+        <div style="background-color: #E5E2C9">
+ <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         
+            </asp:ContentPlaceHolder>
+        </div>
+<!------------------------------------------------------->
+ <div class="wrapper col6">
+  <div id="copyright" style="border:thick none beige; background-color:beige; top: 0px; left: -3px; width: 1022px;">
+    <p class="fl_left">&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style1">&nbsp;Copyright &copy; 2011 - All Rights Reserved - <a href="#">SMO</a></span></p>
+    <br class="clear" />
+  </div>
+</div>
+ 
+    </form>
+ 
+</body>
+</html>
